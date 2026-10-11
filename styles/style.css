@@ -21,7 +21,7 @@ body {
 
 .header {
   background-color: var(--header-bg-color);
-  background-image: url("background_header.svg");
+  background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
