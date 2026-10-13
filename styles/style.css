@@ -100,3 +100,103 @@ body {
   max-width: 646px;
   height: auto;
 }
+
+.content {
+  background-color: #ffd6c5;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  text-align: center;
+  font-weight: 500;
+  padding: 100px 0 120px;
+}
+
+.form-container__title {
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0 0 80px;
+}
+
+.form__fielset {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  max-width: 385px;
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.form__label:has(+ .form__input:required)::after {
+  content: " *";
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  height: 60px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.form__input::placeholder,
+.form__input[type="date"]:invalid,
+.form__input[type^="datetime"]:invalid {
+  color: #838383;
+}
+
+.form__button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #e96e3a;
+  color: #fff;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.form__checkbox-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  accent-color: #2a2a2a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form__checkbox-input:checked {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: #2a2a2a;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+}
