@@ -1,8 +1,21 @@
 :root {
   --header-bg-color: #fff;
+  --footer-font-color-contrast: #fff;
   --base-color: #000;
-  --soft-color: #6f6f6f;
+  --header-time-address-color: #6f6f6f;
+  --reservation-bg-color: #ffd6c5;
   --accent-color: #ff976b;
+  --botton-and-circle-color: #e96e3a;
+  --soft-color: #6f6f6f;
+  --input-placeholder-color: var(--soft-color);
+  --input-border-color: var(--soft-color);
+  --reservation-checkbox-border: #4f4f4f;
+  --reservation-checkbox-bg-hover: #4f4f4f;
+  --reservation-checkbox-bg-selected: #4f4f4f;
+  --footer-bg-color: #d35722;
+  --footer-bg-color-social-icon: #f2f2f2;
+  --footer-link-color-hover: #ffd6c5;
+  --nav-link-color-hover: var(--accent-color);
 }
 
 * {
@@ -56,7 +69,7 @@ body {
   text-decoration: none;
   color: inherit;
   &:hover {
-    color: var(--accent-color);
+    color: var(--nav-link-color-hover);
   }
 }
 
@@ -171,6 +184,9 @@ body {
   box-sizing: border-box;
   background-color: #e96e3a;
   color: #fff;
+  &:hover {
+    opacity: 70%;
+  }
 }
 
 .form__checkbox {
@@ -251,6 +267,9 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  &:hover {
+    color: var(--footer-link-color-hover);
+  }
 }
 
 .footer__social-icon {
