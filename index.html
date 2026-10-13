@@ -50,7 +50,68 @@
       />
     </header>
     <main class="content">
-      <section id="reservas"></section>
+      <section class="form-container" id="reservas">
+        <h1 class="form-container__title">Reservar una mesa</h1>
+        <form class="form" action="/reservas" method="POST">
+          <fieldset class="form__fielset">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input
+              required
+              type="text"
+              class="form__input"
+              placeholder="Nombre"
+              id="nombre"
+              minlength="3"
+              maxlength="35"
+            />
+            <label class="form__label" for="num_comensales"
+              >Número de comensales</label
+            >
+            <input
+              required
+              type="number"
+              class="form__input"
+              placeholder="1-8"
+              id="num_comensales"
+              min="1"
+              max="8"
+            />
+            <label class="form__label" for="datetime">Fecha y hora</label>
+            <input
+              required
+              type="datetime-local"
+              class="form__input"
+              id="datetime"
+              min="1900-01-01T00:00"
+              max="2099-12-31T23:59"
+            />
+            <label class="form__label" for="form-email"
+              >Tu correo electrónico</label
+            >
+            <input
+              required
+              type="email"
+              class="form__input"
+              placeholder="email@email.com"
+              id="form-email"
+              minlength="6"
+              maxlength="30"
+            />
+            <button type="submit" class="form__button form__button--submit">
+              Reservar una mesa
+            </button>
+            <label class="form__label form__checkbox" for="términos">
+              <input
+                required
+                type="checkbox"
+                id="términos"
+                class="form__checkbox-input"
+              />
+              Acepto los términos de uso
+            </label>
+          </fieldset>
+        </form>
+      </section>
       <section id="contactos"></section>
     </main>
     <footer class="footer"></footer>
