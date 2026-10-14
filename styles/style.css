@@ -124,7 +124,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
 }
 
 .form-container {
@@ -223,6 +222,7 @@ body {
   background-color: #d35722;
   padding: 60px 80px;
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   color: #fff;
