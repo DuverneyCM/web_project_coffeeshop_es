@@ -79,7 +79,7 @@ This project has the goal of appropiate knowledge and apply it in a real context
 
 - **Dimension properties:** width (min-width, max-width), height (min-height, max-height), padding, border, margin, box-sizing
 - **Typing:** font (-family, -size, -weight, -style), line-height, color
-- **Visuals:** background (-color, -image, -repeat, -position, -size), box-shadow, opacity, border-radius
+- **Visuals:** background (-color, -image, -repeat, -position, -size), box-shadow, opacity, border-radius, overflow
 
 ### Web Browser Devtools
 
