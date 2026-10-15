@@ -88,5 +88,3 @@ This project has the goal of appropiate knowledge and apply it in a real context
 - Easy selection or location of any component both from the code or the page itself.
 - See the effects of z-index, in special negative values where the transparent body layer covers the other elements and avoid to select/locate them directly from the page.
 - Locate elements by coding selectors or xpath.
-
-completa el README con una descripción de la funcionalidad de la página y las tecnologías y técnicas que utilizaste
